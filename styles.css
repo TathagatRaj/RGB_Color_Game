@@ -191,11 +191,7 @@ button {
 }
 
 @media only screen and (max-width: 350px) {
-    #RestartBtn {
-        font-size: 13px;
-    }
-
-    #CancelBtn {
+    #RestartBtn,#CancelBtn {
         font-size: 13px;
     }
 }
@@ -213,27 +209,7 @@ button {
 }
 
 @media only screen and (max-width: 450px) {
-    #Option1 {
-        font-size: 13px;
-    }
-
-    #Option2 {
-        font-size: 13px;
-    }
-
-    #DOption3 {
-        font-size: 13px;
-    }
-
-    #DOption4 {
-        font-size: 13px;
-    }
-
-    #DOption5 {
-        font-size: 13px;
-    }
-
-    #Dropdown-btn {
+    #Option1,#Option2,#DOption3,#DOption4,#DOption5,#Dropdown-btn {
         font-size: 13px;
     }
 }
@@ -243,15 +219,7 @@ button {
         display: block;
     }  
 
-    #Option3 {
-        display: none;
-    }
-    
-    #Option4 {
-        display: none;
-    }
-    
-    #Option5 {
+    #Option3,#Option4,#Option5 {
         display: none;
     }
 }
