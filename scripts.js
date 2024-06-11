@@ -5,6 +5,9 @@ const Option1 = document.getElementById("Option1");
 const Option2 = document.getElementById("Option2");
 const Option3 = document.getElementById("Option3");
 const Option4 = document.getElementById("Option4");
+const DOption3 = document.getElementById("DOption3");
+const DOption4 = document.getElementById("DOption4");
+const DOption5 = document.getElementById("DOption5");
 const Boxes = document.getElementById("Boxes");
 const InnerBox = document.getElementById("InnerBox");
 const Popup = document.getElementById("Popup");
@@ -20,11 +23,17 @@ let totalChances = 3;
 /*Button EASY*/
 function myThree() {
     Option3.style.color = "white";
-    Option3.style.backgroundColor = "rgb(22, 129, 124)";
-    Option4.style.color = "rgb(22, 129, 124)";
+    DOption3.style.color = "white";
+    Option3.style.backgroundColor = "rgb(56, 151, 56)";
+    DOption3.style.backgroundColor = "rgb(56, 151, 56)";
+    Option4.style.color = "rgb(187, 187, 63)";
+    DOption4.style.color = "rgb(187, 187, 63)";
     Option4.style.backgroundColor = "transparent";
-    Option5.style.color = "rgb(22, 129, 124)";
-    Option5.style.backgroundColor = "transparent"; 
+    DOption4.style.backgroundColor = "transparent";
+    Option5.style.color = "rgb(201, 49, 49)";
+    DOption5.style.color = "rgb(201, 49, 49)";
+    Option5.style.backgroundColor = "transparent";
+    DOption5.style.backgroundColor = "transparent"; 
     for (let i = 0; i < boxes.length; i++) {
         boxes[i].disabled = false;
     }
@@ -34,11 +43,17 @@ function myThree() {
 /*Button MEDIUM*/
 function mySix() {
     Option4.style.color = "white";
-    Option4.style.backgroundColor = "rgb(22, 129, 124)";
-    Option3.style.color = "rgb(22, 129, 124)";
+    DOption4.style.color = "white";
+    Option4.style.backgroundColor = "rgb(187, 187, 63)";
+    DOption4.style.backgroundColor = "rgb(187, 187, 63)";
+    Option3.style.color = "rgb(56, 151, 56)";
+    DOption3.style.color = "rgb(56, 151, 56)";
     Option3.style.backgroundColor = "transparent";
-    Option5.style.color = "rgb(22, 129, 124)";
+    DOption3.style.backgroundColor = "transparent";
+    Option5.style.color = "rgb(201, 49, 49)";
+    DOption5.style.color = "rgb(201, 49, 49)";
     Option5.style.backgroundColor = "transparent";
+    DOption5.style.backgroundColor = "transparent";
     for (let i = 0; i < boxes.length; i++) {
         boxes[i].disabled = false;
     }
@@ -48,11 +63,17 @@ function mySix() {
 /*Button HARD*/
 function myHard() {
     Option5.style.color = "white";
-    Option5.style.backgroundColor = "rgb(22, 129, 124)";
-    Option3.style.color = "rgb(22, 129, 124)";
+    DOption5.style.color = "white";
+    Option5.style.backgroundColor = "rgb(201, 49, 49)";
+    DOption5.style.backgroundColor = "rgb(201, 49, 49)";
+    Option3.style.color = "rgb(56, 151, 56)";
+    DOption3.style.color = "rgb(56, 151, 56)";
     Option3.style.backgroundColor = "transparent";
-    Option4.style.color = "rgb(22, 129, 124)";
+    DOption3.style.backgroundColor = "transparent";
+    Option4.style.color = "rgb(187, 187, 63)";
+    DOption4.style.color = "rgb(187, 187, 63)";
     Option4.style.backgroundColor = "transparent";
+    DOption4.style.backgroundColor = "transparent";
     for (let i = 0; i < boxes.length; i++) {
         boxes[i].disabled = false;
     }
@@ -157,11 +178,23 @@ Option3.onclick = function() {
     myThree();
     Heading.style.backgroundColor = "rgb(0, 191, 255)";
 };
+DOption3.onclick = function() {
+    myThree();
+    Heading.style.backgroundColor = "rgb(0, 191, 255)";
+};
 Option4.onclick = function() {
     mySix();
     Heading.style.backgroundColor = "rgb(0, 191, 255)";
 };
+DOption4.onclick = function() {
+    mySix();
+    Heading.style.backgroundColor = "rgb(0, 191, 255)";
+};
 Option5.onclick = function() {
+    myHard();
+    Heading.style.backgroundColor = "rgb(0, 191, 255)";
+};
+DOption5.onclick = function() {
     myHard();
     Heading.style.backgroundColor = "rgb(0, 191, 255)";
 };

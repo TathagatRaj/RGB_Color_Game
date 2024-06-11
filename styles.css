@@ -33,6 +33,11 @@
     src: url(./Fonts/msg1.otf);
 }
 
+@font-face {
+    font-family: myLvl;
+    src: url(./Fonts/Level2.ttf);
+}
+
 body {
     background-color: black;
 }
@@ -82,21 +87,42 @@ button {
 }
 
 #Option3 {
-    color: rgb(22, 129, 124);
+    color: rgb(56, 151, 56);
     background-color: transparent;
     font-family: myLevel;
+    display: block;
+}
+
+#DOption3 {
+    color: rgb(56, 151, 56);
+    font-family: myLevel;
+    background-color: transparent;
 }
 
 #Option4 {
     color: white;
-    background-color: rgb(22, 129, 124);
+    background-color: rgb(187, 187, 63);
+    font-family: myLevel;
+    display: block;
+}
+
+#DOption4 {
+    color: white;
+    background-color: rgb(187, 187, 63);
     font-family: myLevel;
 }
 
 #Option5 {
-    color: rgb(22, 129, 124);
+    color: rgb(201, 49, 49);
     background-color: transparent;
     font-family: myLevel;
+    display: block;
+}
+
+#DOption5 {
+    color: rgb(201, 49, 49);
+    font-family: myLevel;
+    background-color: transparent;
 }
 
 #Option2 {
@@ -142,5 +168,59 @@ button {
 
 #CancelBtn:hover {
     cursor: pointer;
+}
+
+#Dropdown {
+    position: absolute;
+    display: none;
+}
+
+#Dropdown-btn {
+    outline: none;
+    border: none;
+    font-family: myLvl;
+    color: rgb(22, 129, 124);
+}
+
+#Level {
+    position: relative;
+}
+
+#DropMenu {
+    background-color: rgb(49, 79, 134);
+}
+
+@media only screen and (max-width: 350px) {
+    #RestartBtn,#CancelBtn {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    #Option1 {
+        display: flex;
+        justify-content: start;
+    } 
+    
+    #Level {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    #Option1,#Option2,#DOption3,#DOption4,#DOption5,#Dropdown-btn {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    #Dropdown {
+        display: block;
+    }  
+
+    #Option3,#Option4,#Option5 {
+        display: none;
+    }
 }
 
