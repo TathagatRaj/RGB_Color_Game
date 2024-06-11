@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <title>Color Game</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="container-fluid text-center py-3" id="Heading">
+        <p id="Heading1" class="display-6">THE GREAT</p>
+        <p id="Heading2" class="display-4">RGB(255, 0, 0)</p>
+        <p id="Heading3" class="display-6">GUESSING GAME</p>
+    </div>
+    <div class="container-fluid py-1" id="Options">
+        <div class="d-flex col-md-12 justify-content-evenly mx-auto">
+            <button class="col-4 m-0 fw-bold rounded-3 text-end" id="Option1">NEW COLOR</button>
+            <p class="col-4 m-0 rounded-3 text-center" id="Option2">Try Again</p>
+            <div class="d-flex col-4">
+                <button class="m-0 fw-bold mx-2 rounded-3" id="Option3">EASY</button>
+                <button class="m-0 fw-bold mx-2 rounded-3" id="Option4">MEDIUM</button>
+                <button class="m-0 fw-bold mx-2 rounded-3" id="Option5">HARD</button>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid pb-3" id="Boxes">
+        <div id="InnerBox" class="col-xl-7 col-lg-9 col-md-11">
+        </div>  
+        <div class="col-lg-5 col-6 bg-light rounded-4" id="Popup">
+            <div class="container py-5">
+                <div class="row">
+                    <div class="col-12 text-center mb-4">
+                        <img src="./Images/Laughing.png" class="col-md-1 col-2">
+                    </div>
+                    <div class="col-12 text-center mb-4">
+                        <p class="m-0" id="PopupMsg">This game wasn't made for babies</p>
+                    </div>
+                    <div class="col-6 text-end">
+                        <button id="RestartBtn" class="rounded-3 px-3 py-1">Restart</button>
+                    </div>
+                    <div class="col-6">
+                        <button id="CancelBtn" class="rounded-3 px-3 py-1">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+    
+</body>
+</html>
